@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" pages="1">
+  <diagram id="view3" name="Offers and Sales">
+    <mxGraphModel dx="1190" dy="1390" grid="1" gridSize="10" page="1" pageWidth="1190" pageHeight="1390">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edge8" value="Offers  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=0.5;exitY=1.0;entryX=0.0;entryY=0.3017241379310345;" edge="1" parent="1" source="LISTING" target="OFFER">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="580.0" y="235" />
+              <mxPoint x="745" y="235" />
+              <mxPoint x="745" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge9" value="Submitting agent  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="AGENT" target="OFFER">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="950.0" y="232.5" />
+              <mxPoint x="950.0" y="232.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge10" value="Buyers  1 : 1..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERoneToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=0.0;exitY=0.8706896551724138;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="OFFER" target="OFFER_BUYER">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="580" y="623" />
+              <mxPoint x="580" y="417.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge11" value="Buyer participation  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="CLIENT" target="OFFER_BUYER">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="210.0" y="245.0" />
+              <mxPoint x="210.0" y="245.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge12" value="Completed sale  1 : 0..1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToOne;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="OFFER" target="SALE_TRANSACTION">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="950.0" y="754.0" />
+              <mxPoint x="950.0" y="754.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge13" value="Sale coordinator  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.7560975609756098;" edge="1" parent="1" source="STAFF" target="SALE_TRANSACTION">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="580" y="850.0" />
+              <mxPoint x="580" y="1026" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIENT" value="&lt;b&gt;CLIENT&lt;/b&gt;&lt;br&gt;Client shared&lt;hr&gt;PK client_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="35" width="330" height="110" />
+        </mxCell>
+        <mxCell id="AGENT" value="&lt;b&gt;AGENT&lt;/b&gt;&lt;br&gt;Agent shared&lt;hr&gt;PK agent_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="785" y="35" width="330" height="110" />
+        </mxCell>
+        <mxCell id="LISTING" value="&lt;b&gt;LISTING&lt;/b&gt;&lt;br&gt;Listing shared&lt;hr&gt;PK listing_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="35" width="330" height="110" />
+        </mxCell>
+        <mxCell id="OFFER" value="&lt;b&gt;OFFER&lt;/b&gt;&lt;br&gt;Offer&lt;hr&gt;PK offer_id&lt;br&gt;FK listing_id&lt;br&gt;FK submitted_by_agent_id&lt;br&gt;offer_amount&lt;br&gt;submitted_at&lt;br&gt;expires_at&lt;br&gt;accepted_at&lt;br&gt;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="785" y="320" width="330" height="348" />
+        </mxCell>
+        <mxCell id="OFFER_BUYER" value="&lt;b&gt;OFFER_BUYER&lt;/b&gt;&lt;br&gt;Offer Buyer&lt;hr&gt;PK/FK offer_id&lt;br&gt;PK/FK client_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="345" width="330" height="144" />
+        </mxCell>
+        <mxCell id="STAFF" value="&lt;b&gt;STAFF&lt;/b&gt;&lt;br&gt;Internal Staff&lt;hr&gt;PK staff_id&lt;br&gt;first_name&lt;br&gt;last_name&lt;br&gt;UK email&lt;br&gt;role_code&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="710" width="330" height="280" />
+        </mxCell>
+        <mxCell id="SALE_TRANSACTION" value="&lt;b&gt;SALE_TRANSACTION&lt;/b&gt;&lt;br&gt;Completed Sale&lt;hr&gt;PK sale_id&lt;br&gt;FK/UK offer_id&lt;br&gt;FK coordinator_staff_id&lt;br&gt;completed_on&lt;br&gt;sale_price" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="785" y="840" width="330" height="246" />
+        </mxCell>
+        <mxCell id="constraint_note" value="BR13 At most one accepted offer per listing" style="text;html=1;align=left;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1210" width="1090" height="40" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

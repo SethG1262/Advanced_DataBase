@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" pages="1">
+  <diagram id="view1" name="Property and Listing">
+    <mxGraphModel dx="1190" dy="1390" grid="1" gridSize="10" page="1" pageWidth="1190" pageHeight="1390">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edge0" value="Listing history  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="PROPERTY" target="LISTING">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="580.0" y="684.0" />
+              <mxPoint x="580.0" y="642.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="Responsible agent  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=0.5;exitY=1.0;entryX=0.5;entryY=0.0;" edge="1" parent="1" source="AGENT" target="LISTING">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="950.0" y="417.0" />
+              <mxPoint x="950.0" y="417.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="Seller associations  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=0.0;exitY=0.14331210191082802;entryX=1.0;entryY=0.5;" edge="1" parent="1" source="LISTING" target="LISTING_SELLER">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="765" y="530" />
+              <mxPoint x="765" y="427.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge3" value="Seller participation  1 : 0..N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontSize=15;strokeColor=#444444;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;" edge="1" parent="1" source="CLIENT" target="LISTING_SELLER">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="395.0" y="175.0" />
+              <mxPoint x="395.0" y="427.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIENT" value="&lt;b&gt;CLIENT&lt;/b&gt;&lt;br&gt;Client&lt;hr&gt;PK client_id&lt;br&gt;first_name&lt;br&gt;last_name&lt;br&gt;UK email&lt;br&gt;phone&lt;br&gt;created_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="35" width="330" height="280" />
+        </mxCell>
+        <mxCell id="AGENT" value="&lt;b&gt;AGENT&lt;/b&gt;&lt;br&gt;Agent&lt;hr&gt;PK agent_id&lt;br&gt;UK license_number&lt;br&gt;first_name&lt;br&gt;last_name&lt;br&gt;UK email&lt;br&gt;phone&lt;br&gt;is_active" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="785" y="35" width="330" height="314" />
+        </mxCell>
+        <mxCell id="PROPERTY" value="&lt;b&gt;PROPERTY&lt;/b&gt;&lt;br&gt;Property&lt;hr&gt;PK property_id&lt;br&gt;UK property_ref&lt;br&gt;address_text&lt;br&gt;municipality&lt;br&gt;property_type&lt;br&gt;bedrooms&lt;br&gt;bathrooms&lt;br&gt;floor_area_sqm" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="510" width="330" height="348" />
+        </mxCell>
+        <mxCell id="LISTING" value="&lt;b&gt;LISTING&lt;/b&gt;&lt;br&gt;Listing&lt;hr&gt;PK listing_id&lt;br&gt;FK property_id&lt;br&gt;FK agent_id&lt;br&gt;asking_price&lt;br&gt;listed_on&lt;br&gt;closed_on&lt;br&gt;status" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="785" y="485" width="330" height="314" />
+        </mxCell>
+        <mxCell id="LISTING_SELLER" value="&lt;b&gt;LISTING_SELLER&lt;/b&gt;&lt;br&gt;Listing Seller&lt;hr&gt;PK/FK listing_id&lt;br&gt;PK/FK client_id" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=20;fillColor=#FFFFFF;strokeColor=#444444;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="415" y="355" width="330" height="144" />
+        </mxCell>
+        <mxCell id="constraint_note" value="BR03 Non-draft listings require at least one seller" style="text;html=1;align=left;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1210" width="1090" height="40" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
