@@ -1,0 +1,1602 @@
+{
+  "local": {
+    "crud_operations": [
+      {
+        "document_id": "tre-phase2-crud-example",
+        "operation": "CREATE",
+        "success": true
+      },
+      {
+        "document": {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "listing_id": 1,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-04T16:45:00.000Z"
+        },
+        "operation": "READ"
+      },
+      {
+        "document": {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 4
+          },
+          "follow_up": {
+            "required": true,
+            "status": "DONE"
+          },
+          "listing_id": 1,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-04T16:46:00.000Z"
+        },
+        "operation": "UPDATE"
+      },
+      {
+        "document_id": "tre-phase2-crud-example",
+        "exists_after_delete": false,
+        "operation": "DELETE"
+      }
+    ],
+    "query_results": {
+      "F01_notes_for_showing": [
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T17:15:00.000Z",
+          "feedback": {
+            "concerns": [
+              "maintenance questions"
+            ],
+            "interest_level": "LOW",
+            "liked_features": [
+              "storage"
+            ],
+            "score": 3
+          },
+          "follow_up": {
+            "required": false,
+            "status": "NOT_REQUIRED"
+          },
+          "id": "tre-phase2-note-0003",
+          "listing_id": 1,
+          "note_text": "Closing note summarizing the next conversation with the client.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "summary"
+          ],
+          "updated_at": "2026-01-04T17:15:00.000Z"
+        },
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T17:00:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "MEDIUM",
+            "liked_features": [
+              "location"
+            ],
+            "score": 4
+          },
+          "follow_up": {
+            "required": false,
+            "status": "NOT_REQUIRED"
+          },
+          "id": "tre-phase2-note-0002",
+          "listing_id": 1,
+          "note_text": "Follow-up review of layout preferences and maintenance concerns.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "follow-up"
+          ],
+          "updated_at": "2026-01-04T17:00:00.000Z"
+        },
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0001",
+          "listing_id": 1,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-04T16:45:00.000Z"
+        }
+      ],
+      "F02_follow_up_required": [
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0001",
+          "listing_id": 1,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-04T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 2,
+          "created_at": "2026-01-06T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0004",
+          "listing_id": 2,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 2,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-06T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 3,
+          "created_at": "2026-01-08T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0007",
+          "listing_id": 3,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 3,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-08T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 4,
+          "created_at": "2026-01-10T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0010",
+          "listing_id": 4,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 4,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-10T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 5,
+          "created_at": "2026-01-12T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0013",
+          "listing_id": 5,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 5,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-12T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 6,
+          "created_at": "2026-01-14T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0016",
+          "listing_id": 6,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 6,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-14T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 7,
+          "created_at": "2026-01-16T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0019",
+          "listing_id": 7,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 7,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-16T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 8,
+          "created_at": "2026-01-18T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0022",
+          "listing_id": 8,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 8,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-18T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 9,
+          "created_at": "2026-01-20T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0025",
+          "listing_id": 9,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 9,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-20T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 11,
+          "created_at": "2026-01-24T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0028",
+          "listing_id": 11,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 11,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-24T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 12,
+          "created_at": "2026-01-26T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0031",
+          "listing_id": 12,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 12,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-26T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 13,
+          "created_at": "2026-01-28T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0034",
+          "listing_id": 13,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 13,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-28T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 14,
+          "created_at": "2026-01-30T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0037",
+          "listing_id": 14,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 14,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-30T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 15,
+          "created_at": "2026-02-01T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0040",
+          "listing_id": 15,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 15,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-01T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 16,
+          "created_at": "2026-02-03T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0043",
+          "listing_id": 16,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 16,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-03T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 17,
+          "created_at": "2026-02-05T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0046",
+          "listing_id": 17,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 17,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-05T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 18,
+          "created_at": "2026-02-07T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0049",
+          "listing_id": 18,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 18,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-07T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 19,
+          "created_at": "2026-02-09T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0052",
+          "listing_id": 19,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 19,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-09T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 21,
+          "created_at": "2026-02-13T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0055",
+          "listing_id": 21,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 21,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-13T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 22,
+          "created_at": "2026-02-15T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0058",
+          "listing_id": 22,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 22,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-15T16:45:00.000Z"
+        }
+      ],
+      "F03_total_count": 60
+    },
+    "summary": {
+      "actual_cloud_deployment": false,
+      "anonymous_client_operations_denied": 2,
+      "arrays": [
+        "tags",
+        "feedback.liked_features",
+        "feedback.concerns"
+      ],
+      "cloud_iam_verified": false,
+      "cloud_indexes_verified": false,
+      "collection": "tre_phase2_showing_notes",
+      "crud_operations": [
+        "CREATE",
+        "READ",
+        "UPDATE",
+        "DELETE"
+      ],
+      "dependencies": {
+        "@google-cloud/firestore": "9.3.1",
+        "firebase": "13.0.0"
+      },
+      "documents": 60,
+      "endpoint": "127.0.0.1:8087",
+      "firebase_tools": "15.34.0",
+      "first_seed": {
+        "created": 60,
+        "unchanged": 0
+      },
+      "limitation": "Emulator validates local SDK operations and Rules; it does not enforce production composite-index requirements or validate cloud deployment/IAM.",
+      "mode": "LOCAL_FIRESTORE_EMULATOR_ONLY",
+      "nested_maps": [
+        "feedback",
+        "follow_up"
+      ],
+      "node_version": "v24.14.0",
+      "postgres_reference_validation": "PASS",
+      "project_id": "demo-tre-phase2",
+      "query_row_counts": {
+        "F01": 3,
+        "F02": 20,
+        "F03": 60
+      },
+      "recorded_at_utc": "2026-10-20T18:48:43.234Z",
+      "rejected_invalid_notes": 7,
+      "repeated_seed": {
+        "created": 0,
+        "unchanged": 60
+      },
+      "result": "PASS",
+      "seed_documents_unchanged_after_crud": true
+    }
+  },
+  "cloud": {
+    "crud_operations": [
+      {
+        "document_id": "tre-phase2-crud-example",
+        "operation": "CREATE",
+        "success": true
+      },
+      {
+        "document": {
+          "data": {
+            "author_agent_id": 1,
+            "created_at": "2026-01-04T16:45:00.000Z",
+            "feedback": {
+              "concerns": [],
+              "interest_level": "HIGH",
+              "liked_features": [
+                "layout",
+                "natural light"
+              ],
+              "score": 5
+            },
+            "follow_up": {
+              "required": true,
+              "status": "PENDING"
+            },
+            "listing_id": 1,
+            "note_text": "Initial agent summary of property features and questions.",
+            "prototype_tag": "tre-phase2-v1",
+            "schema_version": 1,
+            "showing_id": 1,
+            "tags": [
+              "showing-feedback",
+              "initial-review"
+            ],
+            "updated_at": "2026-01-04T16:45:00.000Z"
+          },
+          "id": "tre-phase2-crud-example"
+        },
+        "operation": "READ"
+      },
+      {
+        "document": {
+          "data": {
+            "author_agent_id": 1,
+            "created_at": "2026-01-04T16:45:00.000Z",
+            "feedback": {
+              "concerns": [],
+              "interest_level": "HIGH",
+              "liked_features": [
+                "layout",
+                "natural light"
+              ],
+              "score": 4
+            },
+            "follow_up": {
+              "required": true,
+              "status": "DONE"
+            },
+            "listing_id": 1,
+            "note_text": "Initial agent summary of property features and questions.",
+            "prototype_tag": "tre-phase2-v1",
+            "schema_version": 1,
+            "showing_id": 1,
+            "tags": [
+              "showing-feedback",
+              "initial-review"
+            ],
+            "updated_at": "2026-01-04T16:46:00.000Z"
+          },
+          "id": "tre-phase2-crud-example"
+        },
+        "operation": "UPDATE"
+      },
+      {
+        "document_id": "tre-phase2-crud-example",
+        "operation": "DELETE",
+        "success": true
+      }
+    ],
+    "database": {
+      "appEngineIntegrationMode": "DISABLED",
+      "concurrencyMode": "PESSIMISTIC",
+      "createTime": "2026-10-19T21:36:16.538274Z",
+      "databaseEdition": "STANDARD",
+      "deleteProtectionState": "DELETE_PROTECTION_DISABLED",
+      "earliestVersionTime": "2026-10-19T21:36:16.538274Z",
+      "etag": "IKik5N+Fx5cDMKSX2oOFx5cD",
+      "freeTier": true,
+      "locationId": "northamerica-northeast2",
+      "name": "projects/totallyrealestate-phase-2/databases/(default)",
+      "pointInTimeRecoveryEnablement": "POINT_IN_TIME_RECOVERY_DISABLED",
+      "realtimeUpdatesMode": "REALTIME_UPDATES_MODE_ENABLED",
+      "type": "FIRESTORE_NATIVE",
+      "uid": "6776d042-918d-4bfb-80ba-3ad93b84a113",
+      "updateTime": "2026-10-19T21:36:16.538274Z",
+      "versionRetentionPeriod": "3600s"
+    },
+    "indexes": {
+      "indexes": [
+        {
+          "density": "SPARSE_ALL",
+          "fields": [
+            {
+              "fieldPath": "showing_id",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "created_at",
+              "order": "DESCENDING"
+            },
+            {
+              "fieldPath": "__name__",
+              "order": "DESCENDING"
+            }
+          ],
+          "name": "projects/totallyrealestate-phase-2/databases/(default)/collectionGroups/tre_phase2_showing_notes/indexes/CICAgOjXh4EK",
+          "queryScope": "COLLECTION",
+          "state": "READY"
+        },
+        {
+          "density": "SPARSE_ALL",
+          "fields": [
+            {
+              "fieldPath": "follow_up.required",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "created_at",
+              "order": "ASCENDING"
+            },
+            {
+              "fieldPath": "__name__",
+              "order": "ASCENDING"
+            }
+          ],
+          "name": "projects/totallyrealestate-phase-2/databases/(default)/collectionGroups/tre_phase2_showing_notes/indexes/CICAgJiUpoMK",
+          "queryScope": "COLLECTION",
+          "state": "READY"
+        }
+      ]
+    },
+    "query_results": {
+      "F01_notes_for_showing": [
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T17:15:00.000Z",
+          "feedback": {
+            "concerns": [
+              "maintenance questions"
+            ],
+            "interest_level": "LOW",
+            "liked_features": [
+              "storage"
+            ],
+            "score": 3
+          },
+          "follow_up": {
+            "required": false,
+            "status": "NOT_REQUIRED"
+          },
+          "id": "tre-phase2-note-0003",
+          "listing_id": 1,
+          "note_text": "Closing note summarizing the next conversation with the client.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "summary"
+          ],
+          "updated_at": "2026-01-04T17:15:00.000Z"
+        },
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T17:00:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "MEDIUM",
+            "liked_features": [
+              "location"
+            ],
+            "score": 4
+          },
+          "follow_up": {
+            "required": false,
+            "status": "NOT_REQUIRED"
+          },
+          "id": "tre-phase2-note-0002",
+          "listing_id": 1,
+          "note_text": "Follow-up review of layout preferences and maintenance concerns.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "follow-up"
+          ],
+          "updated_at": "2026-01-04T17:00:00.000Z"
+        },
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0001",
+          "listing_id": 1,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-04T16:45:00.000Z"
+        }
+      ],
+      "F02_follow_up_required": [
+        {
+          "author_agent_id": 1,
+          "created_at": "2026-01-04T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0001",
+          "listing_id": 1,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 1,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-04T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 2,
+          "created_at": "2026-01-06T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0004",
+          "listing_id": 2,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 2,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-06T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 3,
+          "created_at": "2026-01-08T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0007",
+          "listing_id": 3,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 3,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-08T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 4,
+          "created_at": "2026-01-10T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0010",
+          "listing_id": 4,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 4,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-10T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 5,
+          "created_at": "2026-01-12T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0013",
+          "listing_id": 5,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 5,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-12T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 6,
+          "created_at": "2026-01-14T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0016",
+          "listing_id": 6,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 6,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-14T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 7,
+          "created_at": "2026-01-16T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0019",
+          "listing_id": 7,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 7,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-16T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 8,
+          "created_at": "2026-01-18T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0022",
+          "listing_id": 8,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 8,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-18T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 9,
+          "created_at": "2026-01-20T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0025",
+          "listing_id": 9,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 9,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-20T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 11,
+          "created_at": "2026-01-24T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0028",
+          "listing_id": 11,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 11,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-24T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 12,
+          "created_at": "2026-01-26T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0031",
+          "listing_id": 12,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 12,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-26T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 13,
+          "created_at": "2026-01-28T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0034",
+          "listing_id": 13,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 13,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-28T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 14,
+          "created_at": "2026-01-30T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0037",
+          "listing_id": 14,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 14,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-01-30T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 15,
+          "created_at": "2026-02-01T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0040",
+          "listing_id": 15,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 15,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-01T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 16,
+          "created_at": "2026-02-03T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0043",
+          "listing_id": 16,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 16,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-03T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 17,
+          "created_at": "2026-02-05T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0046",
+          "listing_id": 17,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 17,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-05T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 18,
+          "created_at": "2026-02-07T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0049",
+          "listing_id": 18,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 18,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-07T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 19,
+          "created_at": "2026-02-09T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0052",
+          "listing_id": 19,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 19,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-09T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 21,
+          "created_at": "2026-02-13T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0055",
+          "listing_id": 21,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 21,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-13T16:45:00.000Z"
+        },
+        {
+          "author_agent_id": 22,
+          "created_at": "2026-02-15T16:45:00.000Z",
+          "feedback": {
+            "concerns": [],
+            "interest_level": "HIGH",
+            "liked_features": [
+              "layout",
+              "natural light"
+            ],
+            "score": 5
+          },
+          "follow_up": {
+            "required": true,
+            "status": "PENDING"
+          },
+          "id": "tre-phase2-note-0058",
+          "listing_id": 22,
+          "note_text": "Initial agent summary of property features and questions.",
+          "prototype_tag": "tre-phase2-v1",
+          "schema_version": 1,
+          "showing_id": 22,
+          "tags": [
+            "showing-feedback",
+            "initial-review"
+          ],
+          "updated_at": "2026-02-15T16:45:00.000Z"
+        }
+      ],
+      "F03_total_count": 60
+    },
+    "summary": {
+      "anonymous_cloud_read_denied": true,
+      "authentication": "Existing official Firebase CLI OAuth login; no service-account key exported",
+      "cloud_composite_indexes_ready": 2,
+      "crud_operations": [
+        "CREATE",
+        "READ",
+        "UPDATE",
+        "DELETE"
+      ],
+      "database_id": "(default)",
+      "database_type": "FIRESTORE_NATIVE",
+      "documents": 60,
+      "location": "northamerica-northeast2",
+      "mode": "CLOUD_FIRESTORE",
+      "node_version": "v24.19.0",
+      "project_id": "totallyrealestate-phase-2",
+      "query_row_counts": {
+        "F01": 3,
+        "F02": 20,
+        "F03": 60
+      },
+      "recorded_at_utc": "2026-10-19T21:42:50.631Z",
+      "result": "PASS",
+      "seed": {
+        "created": 0,
+        "unchanged": 60
+      },
+      "seed_documents_unchanged_after_crud": true,
+      "transport": "Official Firestore REST API with in-memory OAuth access token"
+    }
+  }
+}

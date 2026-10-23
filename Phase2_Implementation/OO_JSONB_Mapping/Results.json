@@ -1,0 +1,1342 @@
+{
+  "queries": {
+    "J01": {
+      "columns": [
+        "listing_id",
+        "status",
+        "property_ref",
+        "property_type",
+        "listing_agent",
+        "asking_price_cad",
+        "sellers",
+        "offers"
+      ],
+      "row_count": 1,
+      "rows": [
+        {
+          "listing_id": "1",
+          "status": "SOLD",
+          "property_ref": "TRE-P-0001",
+          "property_type": "DETACHED",
+          "listing_agent": "Quinn Adams",
+          "asking_price_cad": "283250.00",
+          "sellers": "2",
+          "offers": "2"
+        }
+      ]
+    },
+    "J02": {
+      "columns": [
+        "listing_id",
+        "property_ref",
+        "asking_price_cad"
+      ],
+      "row_count": 13,
+      "rows": [
+        {
+          "listing_id": "102",
+          "property_ref": "TRE-P-0102",
+          "asking_price_cad": "456500.00"
+        },
+        {
+          "listing_id": "106",
+          "property_ref": "TRE-P-0106",
+          "asking_price_cad": "489500.00"
+        },
+        {
+          "listing_id": "110",
+          "property_ref": "TRE-P-0110",
+          "asking_price_cad": "522500.00"
+        },
+        {
+          "listing_id": "114",
+          "property_ref": "TRE-P-0114",
+          "asking_price_cad": "555500.00"
+        },
+        {
+          "listing_id": "118",
+          "property_ref": "TRE-P-0118",
+          "asking_price_cad": "588500.00"
+        },
+        {
+          "listing_id": "122",
+          "property_ref": "TRE-P-0122",
+          "asking_price_cad": "621500.00"
+        },
+        {
+          "listing_id": "126",
+          "property_ref": "TRE-P-0126",
+          "asking_price_cad": "654500.00"
+        },
+        {
+          "listing_id": "130",
+          "property_ref": "TRE-P-0130",
+          "asking_price_cad": "687500.00"
+        },
+        {
+          "listing_id": "134",
+          "property_ref": "TRE-P-0134",
+          "asking_price_cad": "720500.00"
+        },
+        {
+          "listing_id": "138",
+          "property_ref": "TRE-P-0138",
+          "asking_price_cad": "753500.00"
+        },
+        {
+          "listing_id": "142",
+          "property_ref": "TRE-P-0142",
+          "asking_price_cad": "786500.00"
+        },
+        {
+          "listing_id": "146",
+          "property_ref": "TRE-P-0146",
+          "asking_price_cad": "819500.00"
+        },
+        {
+          "listing_id": "150",
+          "property_ref": "TRE-P-0150",
+          "asking_price_cad": "852500.00"
+        }
+      ]
+    },
+    "J03": {
+      "columns": [
+        "listing_id",
+        "seller_count",
+        "sellers"
+      ],
+      "row_count": 65,
+      "rows": [
+        {
+          "listing_id": "1",
+          "seller_count": "2",
+          "sellers": "Alex Chen, Alex Singh"
+        },
+        {
+          "listing_id": "2",
+          "seller_count": "2",
+          "sellers": "Sam Chen, Sam Singh"
+        },
+        {
+          "listing_id": "3",
+          "seller_count": "2",
+          "sellers": "Mei Chen, Mei Singh"
+        },
+        {
+          "listing_id": "4",
+          "seller_count": "2",
+          "sellers": "Jordan Chen, Jordan Singh"
+        },
+        {
+          "listing_id": "5",
+          "seller_count": "2",
+          "sellers": "Taylor Chen, Taylor Singh"
+        },
+        {
+          "listing_id": "6",
+          "seller_count": "2",
+          "sellers": "Avery Chen, Avery Singh"
+        },
+        {
+          "listing_id": "7",
+          "seller_count": "2",
+          "sellers": "Riley Chen, Riley Singh"
+        },
+        {
+          "listing_id": "8",
+          "seller_count": "2",
+          "sellers": "Morgan Chen, Morgan Singh"
+        },
+        {
+          "listing_id": "9",
+          "seller_count": "2",
+          "sellers": "Casey Chen, Casey Singh"
+        },
+        {
+          "listing_id": "10",
+          "seller_count": "2",
+          "sellers": "Jamie Chen, Jamie Singh"
+        },
+        {
+          "listing_id": "11",
+          "seller_count": "2",
+          "sellers": "Alex Patel, Alex Brown"
+        },
+        {
+          "listing_id": "12",
+          "seller_count": "2",
+          "sellers": "Sam Patel, Sam Brown"
+        },
+        {
+          "listing_id": "13",
+          "seller_count": "2",
+          "sellers": "Mei Patel, Mei Brown"
+        },
+        {
+          "listing_id": "14",
+          "seller_count": "2",
+          "sellers": "Jordan Patel, Jordan Brown"
+        },
+        {
+          "listing_id": "15",
+          "seller_count": "2",
+          "sellers": "Taylor Patel, Taylor Brown"
+        },
+        {
+          "listing_id": "16",
+          "seller_count": "2",
+          "sellers": "Avery Patel, Avery Brown"
+        },
+        {
+          "listing_id": "17",
+          "seller_count": "2",
+          "sellers": "Riley Patel, Riley Brown"
+        },
+        {
+          "listing_id": "18",
+          "seller_count": "2",
+          "sellers": "Morgan Patel, Morgan Brown"
+        },
+        {
+          "listing_id": "19",
+          "seller_count": "2",
+          "sellers": "Casey Patel, Casey Brown"
+        },
+        {
+          "listing_id": "20",
+          "seller_count": "2",
+          "sellers": "Jamie Patel, Jamie Brown"
+        },
+        {
+          "listing_id": "21",
+          "seller_count": "2",
+          "sellers": "Alex Wilson, Alex Lee"
+        },
+        {
+          "listing_id": "22",
+          "seller_count": "2",
+          "sellers": "Sam Wilson, Sam Lee"
+        },
+        {
+          "listing_id": "23",
+          "seller_count": "2",
+          "sellers": "Mei Wilson, Mei Lee"
+        },
+        {
+          "listing_id": "24",
+          "seller_count": "2",
+          "sellers": "Jordan Wilson, Jordan Lee"
+        },
+        {
+          "listing_id": "25",
+          "seller_count": "2",
+          "sellers": "Taylor Wilson, Taylor Lee"
+        },
+        {
+          "listing_id": "26",
+          "seller_count": "2",
+          "sellers": "Avery Wilson, Avery Lee"
+        },
+        {
+          "listing_id": "27",
+          "seller_count": "2",
+          "sellers": "Riley Wilson, Riley Lee"
+        },
+        {
+          "listing_id": "28",
+          "seller_count": "2",
+          "sellers": "Morgan Wilson, Morgan Lee"
+        },
+        {
+          "listing_id": "29",
+          "seller_count": "2",
+          "sellers": "Casey Wilson, Casey Lee"
+        },
+        {
+          "listing_id": "30",
+          "seller_count": "2",
+          "sellers": "Jamie Wilson, Jamie Lee"
+        },
+        {
+          "listing_id": "31",
+          "seller_count": "2",
+          "sellers": "Alex Nguyen, Alex Roy"
+        },
+        {
+          "listing_id": "32",
+          "seller_count": "2",
+          "sellers": "Sam Nguyen, Sam Roy"
+        },
+        {
+          "listing_id": "33",
+          "seller_count": "2",
+          "sellers": "Mei Nguyen, Mei Roy"
+        },
+        {
+          "listing_id": "34",
+          "seller_count": "2",
+          "sellers": "Jordan Nguyen, Jordan Roy"
+        },
+        {
+          "listing_id": "35",
+          "seller_count": "2",
+          "sellers": "Taylor Nguyen, Taylor Roy"
+        },
+        {
+          "listing_id": "36",
+          "seller_count": "2",
+          "sellers": "Avery Nguyen, Avery Roy"
+        },
+        {
+          "listing_id": "37",
+          "seller_count": "2",
+          "sellers": "Riley Nguyen, Riley Roy"
+        },
+        {
+          "listing_id": "38",
+          "seller_count": "2",
+          "sellers": "Morgan Nguyen, Morgan Roy"
+        },
+        {
+          "listing_id": "39",
+          "seller_count": "2",
+          "sellers": "Casey Nguyen, Casey Roy"
+        },
+        {
+          "listing_id": "40",
+          "seller_count": "2",
+          "sellers": "Jamie Nguyen, Jamie Roy"
+        },
+        {
+          "listing_id": "41",
+          "seller_count": "2",
+          "sellers": "Alex Martin, Alex Clark"
+        },
+        {
+          "listing_id": "42",
+          "seller_count": "2",
+          "sellers": "Sam Martin, Sam Clark"
+        },
+        {
+          "listing_id": "43",
+          "seller_count": "2",
+          "sellers": "Mei Martin, Mei Clark"
+        },
+        {
+          "listing_id": "44",
+          "seller_count": "2",
+          "sellers": "Jordan Martin, Jordan Clark"
+        },
+        {
+          "listing_id": "45",
+          "seller_count": "2",
+          "sellers": "Taylor Martin, Taylor Clark"
+        },
+        {
+          "listing_id": "46",
+          "seller_count": "2",
+          "sellers": "Avery Martin, Avery Clark"
+        },
+        {
+          "listing_id": "47",
+          "seller_count": "2",
+          "sellers": "Riley Martin, Riley Clark"
+        },
+        {
+          "listing_id": "48",
+          "seller_count": "2",
+          "sellers": "Morgan Martin, Morgan Clark"
+        },
+        {
+          "listing_id": "49",
+          "seller_count": "2",
+          "sellers": "Casey Martin, Casey Clark"
+        },
+        {
+          "listing_id": "50",
+          "seller_count": "2",
+          "sellers": "Jamie Martin, Jamie Clark"
+        },
+        {
+          "listing_id": "51",
+          "seller_count": "2",
+          "sellers": "Alex Singh, Alex Chen"
+        },
+        {
+          "listing_id": "52",
+          "seller_count": "2",
+          "sellers": "Sam Singh, Sam Chen"
+        },
+        {
+          "listing_id": "53",
+          "seller_count": "2",
+          "sellers": "Mei Singh, Mei Chen"
+        },
+        {
+          "listing_id": "54",
+          "seller_count": "2",
+          "sellers": "Jordan Singh, Jordan Chen"
+        },
+        {
+          "listing_id": "55",
+          "seller_count": "2",
+          "sellers": "Taylor Singh, Taylor Chen"
+        },
+        {
+          "listing_id": "56",
+          "seller_count": "2",
+          "sellers": "Avery Singh, Avery Chen"
+        },
+        {
+          "listing_id": "57",
+          "seller_count": "2",
+          "sellers": "Riley Singh, Riley Chen"
+        },
+        {
+          "listing_id": "58",
+          "seller_count": "2",
+          "sellers": "Morgan Singh, Morgan Chen"
+        },
+        {
+          "listing_id": "59",
+          "seller_count": "2",
+          "sellers": "Casey Singh, Casey Chen"
+        },
+        {
+          "listing_id": "60",
+          "seller_count": "2",
+          "sellers": "Jamie Singh, Jamie Chen"
+        },
+        {
+          "listing_id": "61",
+          "seller_count": "2",
+          "sellers": "Alex Brown, Alex Patel"
+        },
+        {
+          "listing_id": "62",
+          "seller_count": "2",
+          "sellers": "Sam Brown, Sam Patel"
+        },
+        {
+          "listing_id": "63",
+          "seller_count": "2",
+          "sellers": "Mei Brown, Mei Patel"
+        },
+        {
+          "listing_id": "64",
+          "seller_count": "2",
+          "sellers": "Jordan Brown, Jordan Patel"
+        },
+        {
+          "listing_id": "65",
+          "seller_count": "2",
+          "sellers": "Taylor Brown, Taylor Patel"
+        }
+      ]
+    },
+    "J04": {
+      "columns": [
+        "listing_id",
+        "offer_id",
+        "status",
+        "offer_amount_cad",
+        "buyers"
+      ],
+      "row_count": 125,
+      "rows": [
+        {
+          "listing_id": "1",
+          "offer_id": "1",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "274752.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "2",
+          "offer_id": "2",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "285670.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "3",
+          "offer_id": "3",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "296752.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "4",
+          "offer_id": "4",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "308000.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "5",
+          "offer_id": "5",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "303600.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "6",
+          "offer_id": "6",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "314765.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "7",
+          "offer_id": "7",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "326095.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "8",
+          "offer_id": "8",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "337590.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "9",
+          "offer_id": "9",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "349250.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "10",
+          "offer_id": "10",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "343200.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "11",
+          "offer_id": "11",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "354777.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "12",
+          "offer_id": "12",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "366520.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "13",
+          "offer_id": "13",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "378427.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "14",
+          "offer_id": "14",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "390500.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "15",
+          "offer_id": "15",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "382800.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "16",
+          "offer_id": "16",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "394790.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "17",
+          "offer_id": "17",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "406945.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "18",
+          "offer_id": "18",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "419265.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "19",
+          "offer_id": "19",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "431750.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "20",
+          "offer_id": "20",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "422400.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "21",
+          "offer_id": "21",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "434802.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "22",
+          "offer_id": "22",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "447370.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "23",
+          "offer_id": "23",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "460102.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "24",
+          "offer_id": "24",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "473000.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "25",
+          "offer_id": "25",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "462000.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "26",
+          "offer_id": "26",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "474815.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "27",
+          "offer_id": "27",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "487795.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "28",
+          "offer_id": "28",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "500940.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "29",
+          "offer_id": "29",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "514250.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "30",
+          "offer_id": "30",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "501600.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "31",
+          "offer_id": "31",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "514827.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "32",
+          "offer_id": "32",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "528220.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "33",
+          "offer_id": "33",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "541777.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "34",
+          "offer_id": "34",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "555500.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "35",
+          "offer_id": "35",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "541200.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "36",
+          "offer_id": "36",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "554840.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "37",
+          "offer_id": "37",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "568645.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "38",
+          "offer_id": "38",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "582615.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "39",
+          "offer_id": "39",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "596750.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "40",
+          "offer_id": "40",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "580800.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "41",
+          "offer_id": "41",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "594852.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "42",
+          "offer_id": "42",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "609070.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "43",
+          "offer_id": "43",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "623452.50",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "44",
+          "offer_id": "44",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "638000.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "45",
+          "offer_id": "45",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "620400.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "46",
+          "offer_id": "46",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "634865.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "47",
+          "offer_id": "47",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "649495.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "48",
+          "offer_id": "48",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "664290.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "49",
+          "offer_id": "49",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "679250.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "50",
+          "offer_id": "50",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "660000.00",
+          "buyers": "2"
+        },
+        {
+          "listing_id": "51",
+          "offer_id": "51",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "674877.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "52",
+          "offer_id": "52",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "689920.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "53",
+          "offer_id": "53",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "705127.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "54",
+          "offer_id": "54",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "720500.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "55",
+          "offer_id": "55",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "699600.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "56",
+          "offer_id": "56",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "714890.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "57",
+          "offer_id": "57",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "730345.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "58",
+          "offer_id": "58",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "745965.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "59",
+          "offer_id": "59",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "761750.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "60",
+          "offer_id": "60",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "739200.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "61",
+          "offer_id": "61",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "754902.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "62",
+          "offer_id": "62",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "770770.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "63",
+          "offer_id": "63",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "786802.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "64",
+          "offer_id": "64",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "803000.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "65",
+          "offer_id": "65",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "778800.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "66",
+          "offer_id": "66",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "794915.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "67",
+          "offer_id": "67",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "811195.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "68",
+          "offer_id": "68",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "827640.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "69",
+          "offer_id": "69",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "844250.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "70",
+          "offer_id": "70",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "818400.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "71",
+          "offer_id": "71",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "834927.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "72",
+          "offer_id": "72",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "851620.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "73",
+          "offer_id": "73",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "868477.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "74",
+          "offer_id": "74",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "885500.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "75",
+          "offer_id": "75",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "858000.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "76",
+          "offer_id": "76",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "874940.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "77",
+          "offer_id": "77",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "892045.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "78",
+          "offer_id": "78",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "909315.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "79",
+          "offer_id": "79",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "926750.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "80",
+          "offer_id": "80",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "264000.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "81",
+          "offer_id": "81",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "274752.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "82",
+          "offer_id": "82",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "285670.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "83",
+          "offer_id": "83",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "296752.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "84",
+          "offer_id": "84",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "308000.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "85",
+          "offer_id": "85",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "303600.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "86",
+          "offer_id": "86",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "314765.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "87",
+          "offer_id": "87",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "326095.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "88",
+          "offer_id": "88",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "337590.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "89",
+          "offer_id": "89",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "349250.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "90",
+          "offer_id": "90",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "343200.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "91",
+          "offer_id": "91",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "354777.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "92",
+          "offer_id": "92",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "366520.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "93",
+          "offer_id": "93",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "378427.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "94",
+          "offer_id": "94",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "390500.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "95",
+          "offer_id": "95",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "382800.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "96",
+          "offer_id": "96",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "394790.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "97",
+          "offer_id": "97",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "406945.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "98",
+          "offer_id": "98",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "419265.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "99",
+          "offer_id": "99",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "431750.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "100",
+          "offer_id": "100",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "422400.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "151",
+          "offer_id": "101",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "834927.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "152",
+          "offer_id": "102",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "851620.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "153",
+          "offer_id": "103",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "868477.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "154",
+          "offer_id": "104",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "885500.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "155",
+          "offer_id": "105",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "858000.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "156",
+          "offer_id": "106",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "874940.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "157",
+          "offer_id": "107",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "892045.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "158",
+          "offer_id": "108",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "909315.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "159",
+          "offer_id": "109",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "926750.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "160",
+          "offer_id": "110",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "264000.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "161",
+          "offer_id": "111",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "274752.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "162",
+          "offer_id": "112",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "285670.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "163",
+          "offer_id": "113",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "296752.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "164",
+          "offer_id": "114",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "308000.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "165",
+          "offer_id": "115",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "303600.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "166",
+          "offer_id": "116",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "314765.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "167",
+          "offer_id": "117",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "326095.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "168",
+          "offer_id": "118",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "337590.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "169",
+          "offer_id": "119",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "349250.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "170",
+          "offer_id": "120",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "343200.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "171",
+          "offer_id": "121",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "354777.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "172",
+          "offer_id": "122",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "366520.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "173",
+          "offer_id": "123",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "378427.50",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "174",
+          "offer_id": "124",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "390500.00",
+          "buyers": "1"
+        },
+        {
+          "listing_id": "175",
+          "offer_id": "125",
+          "status": "ACCEPTED",
+          "offer_amount_cad": "382800.00",
+          "buyers": "1"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "result": "PASS",
+    "listing_objects": 250,
+    "json_round_trips": 250,
+    "jsonb_rows": 250,
+    "query_rows": {
+      "J01": 1,
+      "J02": 13,
+      "J03": 65,
+      "J04": 125
+    },
+    "relational_mismatches_at_capture": 0,
+    "negative_shape_tests": 2,
+    "captured_at_utc": "2026-10-20T18:32:12.479726+00:00",
+    "authority": "tre normalized tables; tre_oo is a replaceable read snapshot"
+  }
+}

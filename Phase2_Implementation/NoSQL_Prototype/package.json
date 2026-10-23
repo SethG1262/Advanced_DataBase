@@ -1,0 +1,20 @@
+{
+  "name": "tre-phase2-firestore-prototype",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "validate:emulator": "node firestore_demo.mjs --emulator",
+    "check:data": "node firestore_demo.mjs --check-data"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "9.3.1",
+    "firebase": "13.0.0"
+  },
+  "devDependencies": {
+    "firebase-tools": "15.34.0"
+  }
+}

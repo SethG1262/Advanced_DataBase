@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // The coursework prototype uses the trusted server SDK. Client access is
+    // denied, including unauthenticated web/mobile reads and writes.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

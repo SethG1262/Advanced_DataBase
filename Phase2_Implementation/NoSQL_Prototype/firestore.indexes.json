@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "tre_phase2_showing_notes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "showing_id", "order": "ASCENDING" },
+        { "fieldPath": "created_at", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "tre_phase2_showing_notes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "follow_up.required", "order": "ASCENDING" },
+        { "fieldPath": "created_at", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
