@@ -16,7 +16,7 @@ and the implementation report.
 | Firestore document datastore | 60 showing notes, nested maps/arrays, CRUD and query evidence |
 | Object-oriented entity and JSONB | Listing composition, 250 snapshots and 4 nested-data queries |
 | Implementation report | English Word report |
-| Narrated video | 4-6 minutes; add the finished video URL below |
+| Narrated video | Recorded MP4 demonstration; see the link below |
 | GitHub and setup documentation | Course folder structure and module README files |
 
 The video should show the schema and data, several explained SQL queries, a
@@ -32,7 +32,9 @@ Phase2_Implementation/
   NoSQL_Prototype/
   OO_JSONB_Mapping/
   Implementation_Report/
-  TRE_Phase2_Speech_Guide.pdf
+    Phase 2 documentation.docx
+  Video/
+    Video demonstaration.mp4
   README.md
 ```
 
@@ -141,19 +143,14 @@ Firebase temporary files and service-account keys.
 
 ## Report and hand-in
 
-[Editable Word report](Implementation_Report/TRE_Phase2_Implementation_Report.docx)
-
-The report covers environment setup, storage choices, implementation steps,
-challenges, execution evidence, member contributions and AI assistance.
+[Phase 2 documentation (Word)](Implementation_Report/Phase%202%20documentation.docx)
 
 Brightspace requires one Word/PDF report, the narrated video or private YouTube
-link, and the GitHub repository link. The video, Phase 2 publication and formal
-submission remain outstanding. Team repository:
+link, and the GitHub repository link. The report and recorded demonstration are
+included in this repository. Brightspace submission must be completed separately.
+Team repository:
 https://github.com/SethG1262/Advanced_DataBase
 
 ## Demo video
 
-Video URL: pending recording.
-
-Use [the English speech guide](TRE_Phase2_Speech_Guide.pdf). The target is 5 minutes
-15 seconds, or 5 minutes 45 seconds with the optional T02 transaction.
+[Watch or download the demonstration (MP4)](Video/Video%20demonstaration.mp4)
