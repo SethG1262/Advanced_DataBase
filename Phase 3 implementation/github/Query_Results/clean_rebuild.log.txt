@@ -1,0 +1,7 @@
+Generated 2500 documents and saved pre-embedding qrels; 0 exact body duplicates.
+Loading model sentence-transformers/all-MiniLM-L6-v2 revision 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+Generated (2500, 384) in 33.8 seconds; over-limit texts: 0
+Indexes created and timed.
+{"mean_precision_at_5": 1.0, "top10_matches": 10, "combined_rows": 2}
+35 integration checks passed.
+Rebuild, search evaluation and integration tests completed.

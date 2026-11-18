@@ -1,0 +1,32 @@
+[
+  {
+    "id": "S1",
+    "text": "A home with a quiet separate office and a door for private video meetings.",
+    "topic": "work",
+    "flag": "office"
+  },
+  {
+    "id": "S2",
+    "text": "A private fenced backyard with outdoor space for a dog to play.",
+    "topic": "outdoor",
+    "flag": "fenced"
+  },
+  {
+    "id": "S3",
+    "text": "Step free access from the entrance into the home without climbing stairs.",
+    "topic": "access",
+    "flag": "step_free"
+  },
+  {
+    "id": "S4",
+    "text": "A parking space with a charger for an electric car at home.",
+    "topic": "parking",
+    "flag": "ev"
+  },
+  {
+    "id": "S5",
+    "text": "A kitchen with an induction cooktop and an island for preparing meals.",
+    "topic": "kitchen",
+    "flag": "induction_island"
+  }
+]

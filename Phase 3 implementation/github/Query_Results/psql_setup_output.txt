@@ -1,0 +1,62 @@
+    table_name    | row_count 
+------------------+-----------
+ client           |       300
+ agent            |       100
+ staff            |         8
+ property         |       200
+ listing          |       250
+ listing_seller   |       300
+ showing          |       300
+ showing_booking  |       300
+ offer            |       250
+ offer_buyer      |       300
+ sale_transaction |       100
+(11 rows)
+
+   status    | listings 
+-------------+----------
+ ACTIVE      |       50
+ DRAFT       |       15
+ EXPIRED     |       25
+ SOLD        |      100
+ UNDER_OFFER |       25
+ WITHDRAWN   |       35
+(6 rows)
+
+  status   | offers 
+-----------+--------
+ ACCEPTED  |    125
+ EXPIRED   |     25
+ REJECTED  |     25
+ SUBMITTED |     50
+ WITHDRAWN |     25
+(5 rows)
+
+  status   | bookings 
+-----------+----------
+ CANCELLED |       69
+ CONFIRMED |      126
+ PENDING   |       63
+ REJECTED  |       42
+(4 rows)
+
+ accepted_awaiting_completion 
+------------------------------
+                           25
+(1 row)
+
+ relisted_properties 
+---------------------
+                  50
+(1 row)
+
+ joint_seller_listings 
+-----------------------
+                    65
+(1 row)
+
+ joint_buyer_offers 
+--------------------
+                 50
+(1 row)
+

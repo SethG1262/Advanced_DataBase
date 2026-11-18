@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagram">
+    <mxGraphModel dx="1140" dy="720" page="1" pageWidth="1140" pageHeight="720">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="source" value="&lt;b&gt;Source and key links&lt;/b&gt;&lt;hr&gt;Phase 2: 200 properties and 250 listings&lt;br&gt;Local generator: 10 topic documents per listing" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="25" y="25" width="495" height="125" />
+        </mxCell>
+        <mxCell id="json" value="&lt;b&gt;Property feature generation&lt;/b&gt;&lt;hr&gt;Nested objects and amenity array&lt;br&gt;Same fictional facts used in source text" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="640" y="25" width="475" height="125" />
+        </mxCell>
+        <mxCell id="audit" value="&lt;b&gt;Clean and review 2500 text rows&lt;/b&gt;&lt;hr&gt;Check blanks, duplicates, keys and token length&lt;br&gt;Keep raw text and record SHA256 hashes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="25" y="205" width="495" height="125" />
+        </mxCell>
+        <mxCell id="features" value="&lt;b&gt;PostgreSQL JSONB&lt;/b&gt;&lt;hr&gt;200 property feature rows; CHECK constraints&lt;br&gt;Amenity lookup, controlled update function" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="640" y="205" width="475" height="125" />
+        </mxCell>
+        <mxCell id="model" value="&lt;b&gt;Embed locally on CPU&lt;/b&gt;&lt;hr&gt;all-MiniLM-L6-v2; pinned revision&lt;br&gt;384 dimensions; mean pooling; normalize" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="25" y="385" width="495" height="125" />
+        </mxCell>
+        <mxCell id="load" value="&lt;b&gt;Load into PostgreSQL 18&lt;/b&gt;&lt;hr&gt;Documents linked by bigint listing_id&lt;br&gt;Store vector, model revision and source hash" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="640" y="385" width="475" height="125" />
+        </mxCell>
+        <mxCell id="index" value="&lt;b&gt;Build indexes&lt;/b&gt;&lt;hr&gt;HNSW cosine for vectors; GIN for JSONB&lt;br&gt;GIN tsvector for full text search" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="25" y="565" width="495" height="125" />
+        </mxCell>
+        <mxCell id="query" value="&lt;b&gt;Query and evaluate&lt;/b&gt;&lt;hr&gt;OO hierarchy + JSONB + vector similarity&lt;br&gt;Top 5 labels; hybrid search; index comparison" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="640" y="565" width="475" height="125" />
+        </mxCell>
+        <mxCell id="e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="source" target="audit">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="json" target="features">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="audit" target="model">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="load" target="query">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="model" target="load">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="load" target="index">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="index" target="query">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="features" target="query">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

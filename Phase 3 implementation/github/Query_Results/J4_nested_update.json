@@ -1,0 +1,65 @@
+{
+  "before": {
+    "features": {
+      "kitchen": {
+        "island": false,
+        "induction": false
+      },
+      "outdoor": {
+        "fenced_yard": false
+      },
+      "parking": {
+        "ev_charger": false
+      },
+      "workspace": {
+        "separate_office": true
+      },
+      "accessibility": {
+        "step_free": false
+      },
+      "schema_version": 1,
+      "nearby_amenities": [
+        {
+          "amenity_id": 2,
+          "distance_m": 1400
+        },
+        {
+          "amenity_id": 4,
+          "distance_m": 1200
+        }
+      ]
+    }
+  },
+  "after": {
+    "features": {
+      "kitchen": {
+        "island": false,
+        "induction": false
+      },
+      "outdoor": {
+        "fenced_yard": true
+      },
+      "parking": {
+        "ev_charger": false
+      },
+      "workspace": {
+        "separate_office": true
+      },
+      "accessibility": {
+        "step_free": false
+      },
+      "schema_version": 1,
+      "nearby_amenities": [
+        {
+          "amenity_id": 2,
+          "distance_m": 1400
+        },
+        {
+          "amenity_id": 4,
+          "distance_m": 1200
+        }
+      ]
+    }
+  },
+  "transaction": "Rolled back after demonstration"
+}

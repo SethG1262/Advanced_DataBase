@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagram">
+    <mxGraphModel dx="1140" dy="760" page="1" pageWidth="1140" pageHeight="760">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="features" value="&lt;b&gt;PropertyFeatures&lt;/b&gt;&lt;hr&gt;property_id: bigint&lt;br&gt;features: jsonb&lt;hr&gt;setFencedYard(bool)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="15" y="35" width="270" height="170" />
+        </mxCell>
+        <mxCell id="property" value="&lt;b&gt;Property&lt;/b&gt;&lt;hr&gt;property_id: bigint&lt;br&gt;address, type, beds, area&lt;hr&gt;summary(): text&lt;br&gt;setFencedYard(bool): jsonb" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="355" y="35" width="390" height="195" />
+        </mxCell>
+        <mxCell id="listing" value="&lt;b&gt;Listing&lt;/b&gt;&lt;hr&gt;listing_id: bigint&lt;br&gt;property_id: bigint&lt;br&gt;price, status" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="825" y="35" width="270" height="170" />
+        </mxCell>
+        <mxCell id="e2" value="1 owns 0..1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;startArrow=diamond;startFill=1;endArrow=none;" edge="1" parent="1" source="property" target="features">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" value="1 has 0..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=none;" edge="1" parent="1" source="property" target="listing">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="detached" value="&lt;b&gt;DetachedProperty&lt;/b&gt;&lt;hr&gt;lot_area_sqm: numeric" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="15" y="335" width="250" height="130" />
+        </mxCell>
+        <mxCell id="e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=block;endFill=0;" edge="1" parent="1" source="detached" target="property">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="condo" value="&lt;b&gt;CondoProperty&lt;/b&gt;&lt;hr&gt;floor_number: smallint&lt;br&gt;monthly_condo_fee: numeric" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="300" y="335" width="250" height="130" />
+        </mxCell>
+        <mxCell id="e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=block;endFill=0;" edge="1" parent="1" source="condo" target="property">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="townhouse" value="&lt;b&gt;TownhouseProperty&lt;/b&gt;&lt;hr&gt;shared_walls: smallint" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="585" y="335" width="250" height="130" />
+        </mxCell>
+        <mxCell id="e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=block;endFill=0;" edge="1" parent="1" source="townhouse" target="property">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="other" value="&lt;b&gt;OtherProperty&lt;/b&gt;&lt;hr&gt;category_note: text" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="870" y="335" width="250" height="130" />
+        </mxCell>
+        <mxCell id="e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;endArrow=block;endFill=0;" edge="1" parent="1" source="other" target="property">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="document" value="&lt;b&gt;ListingDocument&lt;/b&gt;&lt;hr&gt;document_id, listing_id: bigint&lt;br&gt;topic, title, body: text&lt;br&gt;embedding: vector(384)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f8fb;strokeColor=#35465e;fontSize=18;align=left;spacing=10;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="365" y="565" width="450" height="165" />
+        </mxCell>
+        <mxCell id="e9" value="1 owns 0..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#35465e;fontSize=17;startArrow=diamond;startFill=1;endArrow=none;" edge="1" parent="1" source="listing" target="document">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

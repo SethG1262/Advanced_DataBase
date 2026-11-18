@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "recorded_at_utc": "2026-11-17T16:49:18.211551+00:00",
+  "scope": "Release-candidate ZIP extracted outside the source folder; full regeneration from another working directory; updated report and final archive are checked separately.",
+  "input_archive_sha256": "39914b1b95e08d3c154e3d66aad80f325c57f644b4adb1e257c804dd921b693d",
+  "manifest_files_verified": 100,
+  "fresh_database": "tre_phase3_review_104827",
+  "duration_seconds": 48.777,
+  "table_count": 18,
+  "tables_match": true,
+  "regenerated_vector_file_matches": true,
+  "passed_integration_checks": 35,
+  "qrels_verified": 12500,
+  "top5_result_rows_verified": 25,
+  "sql_examples": {
+    "06_oo_jsonb_examples.sql": "PASS",
+    "07_vector_search_examples.sql": "PASS",
+    "C1_filtered.sql": "PASS",
+    "D1_combined.sql": "PASS"
+  },
+  "examples_preserve_database": true,
+  "top10_overlap": 10,
+  "mean_precision_at_5": 1.0,
+  "review_directory": "C:\\Users\\yisongwang\\Documents\\ChatGPT\\RealEstate project\\.phase3_review\\20261117_104826"
+}

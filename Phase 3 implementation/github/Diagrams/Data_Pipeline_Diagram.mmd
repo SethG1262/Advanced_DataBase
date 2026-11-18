@@ -1,0 +1,12 @@
+flowchart TD
+    A[Phase 2 properties and listings] --> B[Generate 2500 topic documents]
+    F[Generate property feature facts] --> B
+    F --> G[Validate and load JSONB]
+    B --> C[Review keys blanks duplicates and token lengths]
+    C --> D[Local CPU all-MiniLM-L6-v2 pinned revision 384 dimensions]
+    D --> E[SQL load vectors with source hashes]
+    G --> H[PostgreSQL 18 relational and OO tables]
+    E --> H
+    H --> I[HNSW cosine and GIN JSONB and full text indexes]
+    I --> J[Vector filtered hybrid and combined queries]
+    J --> K[Top five relevance labels precision and index comparison]

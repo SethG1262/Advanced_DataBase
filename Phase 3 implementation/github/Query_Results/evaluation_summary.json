@@ -1,0 +1,134 @@
+{
+  "recorded_at_utc": "2026-11-17T16:49:15.509360+00:00",
+  "queries": [
+    {
+      "query_id": "S1",
+      "query": "A home with a quiet separate office and a door for private video meetings.",
+      "returned": 5,
+      "relevant": 5,
+      "precision_at_5": 1.0
+    },
+    {
+      "query_id": "S2",
+      "query": "A private fenced backyard with outdoor space for a dog to play.",
+      "returned": 5,
+      "relevant": 5,
+      "precision_at_5": 1.0
+    },
+    {
+      "query_id": "S3",
+      "query": "Step free access from the entrance into the home without climbing stairs.",
+      "returned": 5,
+      "relevant": 5,
+      "precision_at_5": 1.0
+    },
+    {
+      "query_id": "S4",
+      "query": "A parking space with a charger for an electric car at home.",
+      "returned": 5,
+      "relevant": 5,
+      "precision_at_5": 1.0
+    },
+    {
+      "query_id": "S5",
+      "query": "A kitchen with an induction cooktop and an island for preparing meals.",
+      "returned": 5,
+      "relevant": 5,
+      "precision_at_5": 1.0
+    }
+  ],
+  "relevance_method": "Predeclared topic plus positive feature rubric; assistant-authored synthetic qrels, not independent human labels.",
+  "result_grain": "Document for S1-S5 and hybrid; one listing for D1.",
+  "server": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit",
+  "pgvector_version": "0.8.7",
+  "hnsw": {
+    "ef_search": 200,
+    "iterative_scan": "strict_order",
+    "m": 16,
+    "ef_construction": 64
+  },
+  "mean_precision_at_5": 1.0,
+  "C1_filtered": {
+    "rows_returned": 5,
+    "unique_listings": 5
+  },
+  "D1_combined": {
+    "rows_returned": 2,
+    "unique_listings": 2
+  },
+  "C2_vector_only": {
+    "exact_station_relevant": 5,
+    "precision_at_5": 1.0
+  },
+  "C2_hybrid": {
+    "exact_station_relevant": 5,
+    "precision_at_5": 1.0
+  },
+  "index_comparison": {
+    "exact": {
+      "document_ids": [
+        1822,
+        722,
+        672,
+        822,
+        572,
+        1722,
+        1872,
+        1072,
+        1672,
+        1852
+      ],
+      "repeats": 7,
+      "milliseconds": [
+        12.796199999684177,
+        13.187900000048103,
+        13.144099999863101,
+        13.234100000317994,
+        12.678899999627902,
+        12.542999999823223,
+        12.27149999976973
+      ],
+      "median_ms": 12.796199999684177,
+      "cache": "warm",
+      "measurement": "client execute plus fetch",
+      "explain_execution_ms": 12.391
+    },
+    "hnsw": {
+      "document_ids": [
+        1822,
+        722,
+        672,
+        822,
+        572,
+        1722,
+        1872,
+        1072,
+        1672,
+        1852
+      ],
+      "repeats": 7,
+      "milliseconds": [
+        0.6113999997978681,
+        0.5680999997821345,
+        0.5473999999594525,
+        0.6338000002870103,
+        0.3639000001385284,
+        0.3457999996498984,
+        0.37880000036238926
+      ],
+      "median_ms": 0.5473999999594525,
+      "cache": "warm",
+      "measurement": "client execute plus fetch",
+      "explain_execution_ms": 0.332
+    },
+    "top10_matches": 10,
+    "recall_at_10": 1.0,
+    "settings_note": "Exact disables index and bitmap scans. HNSW disables sequential scans. Plans saved to verify paths; other settings identical."
+  },
+  "baseline_counts": {
+    "properties": 200,
+    "listings": 250,
+    "documents": 2500,
+    "embeddings": 2500
+  }
+}

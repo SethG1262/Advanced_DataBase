@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "command": "psql -X -v ON_ERROR_STOP=1 -f SQL_Scripts/run_all.psql",
+  "new_database": "tre_phase3_psql_review",
+  "documents": 2500,
+  "embeddings": 2500
+}

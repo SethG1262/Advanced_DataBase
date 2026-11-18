@@ -1,0 +1,74 @@
+{
+  "statements": [
+    {
+      "statement": "-- Build after loading all documents and embeddings.\nCREATE INDEX property_features_gin ON tre_p3.property_features USING gin(features jsonb_path_ops)",
+      "elapsed_ms": 7.736
+    },
+    {
+      "statement": "CREATE INDEX listing_document_hnsw ON tre_p3.listing_document USING hnsw(embedding public.vector_cosine_ops)\nWITH (m=16, ef_construction=64)",
+      "elapsed_ms": 415.347
+    },
+    {
+      "statement": "CREATE INDEX listing_document_fts ON tre_p3.listing_document USING gin(search_terms)",
+      "elapsed_ms": 29.369
+    },
+    {
+      "statement": "ANALYZE tre_p3.property_features",
+      "elapsed_ms": 4.778
+    },
+    {
+      "statement": "ANALYZE tre_p3.listing_document",
+      "elapsed_ms": 15.414
+    }
+  ],
+  "index_sizes": [
+    {
+      "indexrelname": "amenity_pkey",
+      "bytes": 16384
+    },
+    {
+      "indexrelname": "condo_property_pkey",
+      "bytes": 16384
+    },
+    {
+      "indexrelname": "detached_property_pkey",
+      "bytes": 16384
+    },
+    {
+      "indexrelname": "listing_document_fts",
+      "bytes": 376832
+    },
+    {
+      "indexrelname": "listing_document_hnsw",
+      "bytes": 5128192
+    },
+    {
+      "indexrelname": "listing_document_listing_id_topic_key",
+      "bytes": 188416
+    },
+    {
+      "indexrelname": "listing_document_listing_idx",
+      "bytes": 73728
+    },
+    {
+      "indexrelname": "listing_document_pkey",
+      "bytes": 139264
+    },
+    {
+      "indexrelname": "other_property_pkey",
+      "bytes": 16384
+    },
+    {
+      "indexrelname": "property_features_gin",
+      "bytes": 16384
+    },
+    {
+      "indexrelname": "property_features_pkey",
+      "bytes": 16384
+    },
+    {
+      "indexrelname": "townhouse_property_pkey",
+      "bytes": 16384
+    }
+  ]
+}

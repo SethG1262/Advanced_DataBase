@@ -1,0 +1,170 @@
+[
+  {
+    "ef_search": 40,
+    "topics": [
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor"
+    ],
+    "ids": [
+      583,
+      723,
+      1923,
+      523,
+      623,
+      2023,
+      2283,
+      783,
+      1283,
+      683
+    ],
+    "best_score": 0.27621267069019906
+  },
+  {
+    "ef_search": 100,
+    "topics": [
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor",
+      "outdoor"
+    ],
+    "ids": [
+      583,
+      723,
+      1923,
+      523,
+      623,
+      2023,
+      2283,
+      783,
+      1283,
+      683
+    ],
+    "best_score": 0.27621267069019906
+  },
+  {
+    "ef_search": 200,
+    "topics": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work"
+    ],
+    "ids": [
+      1822,
+      722,
+      672,
+      822,
+      572,
+      1722,
+      1872,
+      1072,
+      1672,
+      1852
+    ],
+    "best_score": 0.6548862858150543
+  },
+  {
+    "ef_search": 400,
+    "topics": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work"
+    ],
+    "ids": [
+      1822,
+      722,
+      672,
+      822,
+      572,
+      1722,
+      1872,
+      1072,
+      1672,
+      1852
+    ],
+    "best_score": 0.6548862858150543
+  },
+  {
+    "ef_search": 800,
+    "topics": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work"
+    ],
+    "ids": [
+      1822,
+      722,
+      672,
+      822,
+      572,
+      1722,
+      1872,
+      1072,
+      1672,
+      1852
+    ],
+    "best_score": 0.6548862858150543
+  },
+  {
+    "ef_search": 1000,
+    "topics": [
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work",
+      "work"
+    ],
+    "ids": [
+      1822,
+      722,
+      672,
+      822,
+      572,
+      1722,
+      1872,
+      1072,
+      1672,
+      1852
+    ],
+    "best_score": 0.6548862858150543
+  }
+]

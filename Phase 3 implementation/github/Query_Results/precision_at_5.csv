@@ -1,0 +1,6 @@
+query_id,query,returned,relevant,precision_at_5
+S1,A home with a quiet separate office and a door for private video meetings.,5,5,1.0
+S2,A private fenced backyard with outdoor space for a dog to play.,5,5,1.0
+S3,Step free access from the entrance into the home without climbing stairs.,5,5,1.0
+S4,A parking space with a charger for an electric car at home.,5,5,1.0
+S5,A kitchen with an induction cooktop and an island for preparing meals.,5,5,1.0

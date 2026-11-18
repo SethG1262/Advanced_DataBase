@@ -1,0 +1,12 @@
+Sort  (cost=16.87..17.06 rows=76 width=444) (actual time=0.115..0.117 rows=75.00 loops=1)
+  Sort Key: property_id
+  Sort Method: quicksort  Memory: 58kB
+  Buffers: shared hit=12
+  ->  Seq Scan on property_features  (cost=0.00..14.50 rows=76 width=444) (actual time=0.013..0.085 rows=75.00 loops=1)
+        Filter: (features @> '{"outdoor": {"fenced_yard": true}}'::jsonb)
+        Rows Removed by Filter: 125
+        Buffers: shared hit=12
+Planning:
+  Buffers: shared hit=1
+Planning Time: 0.088 ms
+Execution Time: 0.127 ms

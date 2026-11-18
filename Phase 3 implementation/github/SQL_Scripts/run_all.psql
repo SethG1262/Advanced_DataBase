@@ -1,0 +1,14 @@
+\set ON_ERROR_STOP on
+-- Use a NEW empty database. Relative paths resolve from this script.
+\ir phase2_baseline/01_schema.sql
+\ir phase2_baseline/02_indexes.sql
+\ir phase2_baseline/03_business_rules.sql
+\ir phase2_baseline/04_sample_data.sql
+\ir phase2_baseline/05_verify.sql
+\ir phase2_baseline/07_views.sql
+\ir phase2_baseline/08_stored_procedures.sql
+\ir 01_phase3_schema.sql
+\ir 02_subtypes_and_features.sql
+\ir 03_load_documents.sql
+\ir 04_load_vectors.sql
+\ir 05_indexes.sql

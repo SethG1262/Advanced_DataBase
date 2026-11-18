@@ -1,0 +1,83 @@
+{
+  "result": "PASS",
+  "fresh_database": "tre_phase3_review_104827",
+  "tables_match": true,
+  "table_count": 18,
+  "fingerprints": {
+    "tre.agent": {
+      "rows": 100,
+      "hash": "d2fe1ff8d7096a79bf997a3fc07bccfa"
+    },
+    "tre.client": {
+      "rows": 300,
+      "hash": "3b76e3048ffa73025915c4ef1d5b5307"
+    },
+    "tre.listing": {
+      "rows": 250,
+      "hash": "98c5a9e62de781bd4b79c4234b28e92b"
+    },
+    "tre.listing_seller": {
+      "rows": 300,
+      "hash": "58ac335bc2ed4b07b2cadb7cd930595e"
+    },
+    "tre.offer": {
+      "rows": 250,
+      "hash": "9a74d256e1c6c882d65bfe4399a134b1"
+    },
+    "tre.offer_buyer": {
+      "rows": 300,
+      "hash": "6d9768bdd4d97d6ec4f8a8d3e91566eb"
+    },
+    "tre.property": {
+      "rows": 200,
+      "hash": "fa01e8c4724e5de2cba7c75e04c8fc41"
+    },
+    "tre.sale_transaction": {
+      "rows": 100,
+      "hash": "1addef93c8437043d895fbc6ead31684"
+    },
+    "tre.showing": {
+      "rows": 300,
+      "hash": "9109290ffe2e01cc8b784160b517702b"
+    },
+    "tre.showing_booking": {
+      "rows": 300,
+      "hash": "98712812ef7bd549769d976bf8c0c5dd"
+    },
+    "tre.staff": {
+      "rows": 8,
+      "hash": "c5ac4d30800fcc724bea4282e04d8685"
+    },
+    "tre_p3.amenity": {
+      "rows": 6,
+      "hash": "e67ed70b3493326eb8d9a2e6a765e132"
+    },
+    "tre_p3.condo_property": {
+      "rows": 50,
+      "hash": "84b97d51a1b1d9a8553dcc055893222f"
+    },
+    "tre_p3.detached_property": {
+      "rows": 50,
+      "hash": "5f4563d5f8ad564cc4da38a89f45ec4f"
+    },
+    "tre_p3.listing_document": {
+      "rows": 2500,
+      "hash": "3cccd38441f29b686c528c06166ebd68"
+    },
+    "tre_p3.other_property": {
+      "rows": 50,
+      "hash": "58ab7dceaa906d0e7d56e5359bf1c98a"
+    },
+    "tre_p3.property_features": {
+      "rows": 200,
+      "hash": "7fdcb7a019466f666aee10f3eec16681"
+    },
+    "tre_p3.townhouse_property": {
+      "rows": 50,
+      "hash": "2bbc513dd918e395965d3e322982d574"
+    }
+  },
+  "duration_seconds": 48.777,
+  "regenerated_vector_file_matches": true,
+  "steps": "Release-candidate ZIP -> separate directory -> empty database -> Phase2 -> regenerated text/qrels -> schema -> regenerated pinned embeddings -> indexes -> evaluation -> 35 integration checks"
+}

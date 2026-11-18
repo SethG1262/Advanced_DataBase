@@ -1,0 +1,36 @@
+test,result,detail
+Baseline keys and 2500 text documents,PASS,
+Complete subtype coverage,PASS,
+Wrong subclass membership,PASS,Rejected with SQLSTATE 23514
+Missing subtype at transaction end,PASS,Rejected with SQLSTATE 23514
+Parent discriminator mismatch,PASS,Rejected with SQLSTATE 23514
+Immutable subtype key,PASS,Rejected with SQLSTATE 23514
+Negative lot size,PASS,Rejected with SQLSTATE 23514
+Negative condo fee,PASS,Rejected with SQLSTATE 23514
+JSON root must be an object,PASS,Rejected with SQLSTATE 23514
+Required JSON key,PASS,Rejected with SQLSTATE 23514
+JSON null does not bypass CHECK,PASS,Rejected with SQLSTATE 23514
+Boolean type is strict,PASS,Rejected with SQLSTATE 23514
+Nonnegative amenity distance,PASS,Rejected with SQLSTATE 23514
+Amenity ID must be integral,PASS,Rejected with SQLSTATE 23514
+Amenity ID fits bigint,PASS,Rejected with SQLSTATE 23514
+Amenity key exists,PASS,Rejected with SQLSTATE 23503
+Referenced catalogue protected,PASS,Rejected with SQLSTATE 23514
+Operation rejects null boolean,PASS,Rejected with SQLSTATE 23514
+Operation rejects unknown property,PASS,Rejected with SQLSTATE P0002
+Document listing FK,PASS,Rejected with SQLSTATE 23503
+Short source text,PASS,Rejected with SQLSTATE 23514
+Vector dimension must match model,PASS,Rejected with SQLSTATE 22000
+Vector provenance hash must match,PASS,Rejected with SQLSTATE 23514
+Integral decimal JSON ID joins correctly,PASS,
+Array join preserves fractional distance,PASS,
+Encapsulated nested update preserves other keys,PASS,
+Text edits invalidate derived embeddings,PASS,
+Text hash recomputed in database,PASS,
+All vectors loaded at model dimensions,PASS,
+No invalid or zero vectors,PASS,
+Normalized vectors,PASS,
+SQL vector load matches generated float32 values,PASS,
+All text and embedding hashes match,PASS,
+All four polymorphic summaries present,PASS,
+Nested update rolled back,PASS,

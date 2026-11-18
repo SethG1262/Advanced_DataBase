@@ -1,0 +1,183 @@
+{
+  "result": "PASS",
+  "recorded_at_utc": "2026-11-17T16:49:16.891315+00:00",
+  "passed": 35,
+  "failed": 0,
+  "checks": [
+    {
+      "test": "Baseline keys and 2500 text documents",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Complete subtype coverage",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Wrong subclass membership",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Missing subtype at transaction end",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Parent discriminator mismatch",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Immutable subtype key",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Negative lot size",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Negative condo fee",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "JSON root must be an object",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Required JSON key",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "JSON null does not bypass CHECK",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Boolean type is strict",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Nonnegative amenity distance",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Amenity ID must be integral",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Amenity ID fits bigint",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Amenity key exists",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23503"
+    },
+    {
+      "test": "Referenced catalogue protected",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Operation rejects null boolean",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Operation rejects unknown property",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE P0002"
+    },
+    {
+      "test": "Document listing FK",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23503"
+    },
+    {
+      "test": "Short source text",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Vector dimension must match model",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 22000"
+    },
+    {
+      "test": "Vector provenance hash must match",
+      "result": "PASS",
+      "detail": "Rejected with SQLSTATE 23514"
+    },
+    {
+      "test": "Integral decimal JSON ID joins correctly",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Array join preserves fractional distance",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Encapsulated nested update preserves other keys",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Text edits invalidate derived embeddings",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Text hash recomputed in database",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "All vectors loaded at model dimensions",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "No invalid or zero vectors",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Normalized vectors",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "SQL vector load matches generated float32 values",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "All text and embedding hashes match",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "All four polymorphic summaries present",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "Nested update rolled back",
+      "result": "PASS",
+      "detail": ""
+    }
+  ]
+}

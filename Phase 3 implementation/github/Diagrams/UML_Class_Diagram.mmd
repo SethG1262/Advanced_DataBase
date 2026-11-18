@@ -1,0 +1,47 @@
+classDiagram
+    class Property {
+      bigint property_id
+      string address_text
+      string property_type
+      summary() text
+      setFencedYard(bool) jsonb
+    }
+    class DetachedProperty {
+      numeric lot_area_sqm
+    }
+    class CondoProperty {
+      smallint floor_number
+      numeric monthly_condo_fee
+    }
+    class TownhouseProperty {
+      smallint shared_walls
+    }
+    class OtherProperty {
+      string category_note
+    }
+    class PropertyFeatures {
+      bigint property_id
+      jsonb features
+    }
+    class Listing {
+      bigint listing_id
+      bigint property_id
+      numeric asking_price
+      string status
+    }
+    class ListingDocument {
+      bigint document_id
+      bigint listing_id
+      string topic
+      string title
+      string body
+      vector384 embedding
+    }
+    Property <|-- DetachedProperty
+    Property <|-- CondoProperty
+    Property <|-- TownhouseProperty
+    Property <|-- OtherProperty
+    Property "1" *-- "0..1" PropertyFeatures : owns
+    Property "1" -- "0..*" Listing : has
+    Listing "1" *-- "0..*" ListingDocument : owns
+    note for Property "Complete and disjoint specialization by property_type. Shared fields live once in tre.property."

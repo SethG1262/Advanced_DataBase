@@ -1,0 +1,29 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dimensions": 384,
+  "licence": "Apache-2.0",
+  "model_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+  "device": "CPU",
+  "threads": 4,
+  "max_sequence_length": 256,
+  "pooling": "SentenceTransformer model configured mean pooling",
+  "normalized": true,
+  "distance": "cosine",
+  "index": "HNSW vector_cosine_ops",
+  "document_count": 2500,
+  "input": "title + newline + body",
+  "dtype": "float32",
+  "python": "3.12.10",
+  "packages": {
+    "sentence-transformers": "6.3.0",
+    "transformers": "5.23.0",
+    "torch": "2.15.0",
+    "numpy": "2.5.5",
+    "psycopg": "3.3.9",
+    "pgvector": "0.5.1",
+    "huggingface-hub": "2.4.0"
+  },
+  "model_load_and_generation_seconds": 33.765,
+  "vector_file_sha256": "b6969498b4286416c156b8e96a9d53f5a2d1c502cfe6b27fccb83294427536d9"
+}
