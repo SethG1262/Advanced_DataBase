@@ -28,23 +28,20 @@ Advanced_DataBase/
 ├── Phase2_Implementation/
 │   └── README.md
 └── Phase3_Implementation/
-    ├── README.md
-    └── advanceddb_project/
-        └── Phase3_OO_JSONB_Vector/
-            ├── Design_Plan/
-            ├── Diagrams/
-            ├── SQL_Scripts/
-            ├── Embeddings/
-            ├── Query_Results/
-            ├── Technical_Report/
-            └── README.md
+    ├── Design_Plan/
+    ├── Diagrams/
+    ├── SQL_Scripts/
+    ├── Embeddings/
+    ├── Query_Results/
+    ├── Technical_Report/
+    └── README.md
 ```
 
 The Phase 1 design process, business rules, contributions and planned later scope are documented in [Phase1_Modelling/README.md](Phase1_Modelling/README.md). Each phase's README contains its own setup instructions, evidence and applicable disclosures.
 
 ## Phase 3 final document
 
-The [final technical report and design plan](Phase3_Implementation/advanceddb_project/Phase3_OO_JSONB_Vector/Technical_Report/Phase%203%20Technical%20Report%20and%20Design%20Plan.docx) are combined in one editable Word document. The design plan begins at the **Design Plan** heading; the same document also contains the team's contribution table.
+The [final technical report and design plan](Phase3_Implementation/Technical_Report/Phase%203%20Technical%20Report%20and%20Design%20Plan.docx) are combined in one editable Word document. The design plan begins at the **Design Plan** heading; the same document also contains the team's contribution table.
 
 ## Team
 
