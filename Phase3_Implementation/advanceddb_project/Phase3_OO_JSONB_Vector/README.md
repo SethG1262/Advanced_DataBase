@@ -8,12 +8,16 @@ The current Brightspace instructions were read on November 17, 2026: [Phase 3 br
 
 | Folder | Contents |
 |---|---|
-| Design_Plan | Two-page Word/PDF design plan and requirement-to-evidence checklist |
+| Design_Plan | Link to the design plan in the final combined Word document, plus the requirement-to-evidence checklist |
 | Diagrams | UML and data pipeline diagrams in PNG, SVG, draw.io and Mermaid formats |
 | SQL_Scripts | Self-contained Phase 2 baseline, Phase 3 schema, data/vector loaders, indexes and executed query examples |
 | Embeddings | Raw JSONL, vectors, model manifest, predeclared relevance labels, Python pipeline and pinned dependencies |
 | Query_Results | Full CSV results, JSON/TXT execution plans, data audit, timings, integration tests and clean rebuild evidence |
-| Technical_Report | Five-page Word/PDF report and document generation source |
+| Technical_Report | Final combined Word technical report, design plan and contribution table |
+
+The final document is [Phase 3 Technical Report and Design Plan](Technical_Report/Phase%203%20Technical%20Report%20and%20Design%20Plan.docx). Its **Design Plan** section is the submitted design plan. See [Design_Plan/README.md](Design_Plan/README.md) for the section outline.
+
+This package is located at `Phase3_Implementation/advanceddb_project/Phase3_OO_JSONB_Vector/` in the repository. Run the relative paths below from this package directory.
 
 ## Environment
 
@@ -44,15 +48,26 @@ From this folder, run:
 psql -X -v ON_ERROR_STOP=1 -f SQL_Scripts/run_all.psql
 ```
 
-The runner loads the original Phase 2 schema, indexes, rules, 2,408 business rows, verification, views and procedures. Then it executes these files in order:
+The runner executes the original SQL files separately. In pgAdmin, open each complete file in Query Tool and execute it in this order; all files use the same new database. Wait for successful completion before continuing.
 
-1. `01_phase3_schema.sql`: extension, four subtype tables, features, documents, methods and rules.
-2. `02_subtypes_and_features.sql`: 200 subtype records, 200 feature records and six fictional amenities.
-3. `03_load_documents.sql`: 2,500 source text records.
-4. `04_load_vectors.sql`: real model vectors, revision and matching text hashes.
-5. `05_indexes.sql`: JSONB GIN, HNSW cosine and full-text GIN; analyze the tables.
+| Step | File under SQL_Scripts | Purpose |
+| --- | --- | --- |
+| 1 | `phase2_baseline/01_schema.sql` | Create the original 11 business tables and constraints |
+| 2 | `phase2_baseline/02_indexes.sql` | Create Phase 2 query and conditional-uniqueness indexes |
+| 3 | `phase2_baseline/03_business_rules.sql` | Install business-rule functions and triggers |
+| 4 | `phase2_baseline/04_sample_data.sql` | Load 2,408 synthetic business records |
+| 5 | `phase2_baseline/05_verify.sql` | Check Phase 2 structure, row counts and business rules |
+| 6 | `phase2_baseline/07_views.sql` | Create the three reusable business views |
+| 7 | `phase2_baseline/08_stored_procedures.sql` | Create the offer-acceptance and sale-completion procedures |
+| 8 | `01_phase3_schema.sql` | Enable pgvector and create subtypes, JSONB features and document structures |
+| 9 | `02_subtypes_and_features.sql` | Load 200 subtype rows, 200 feature records and six amenities |
+| 10 | `03_load_documents.sql` | Load 2,500 source text records |
+| 11 | `04_load_vectors.sql` | Load the supplied 384-dimensional vectors and their provenance |
+| 12 | `05_indexes.sql` | Build JSONB GIN, HNSW and full-text GIN indexes and update statistics |
 
-In pgAdmin Query Tool, run the complete `.sql` files individually in the same order. `run_all.psql` uses psql include commands and is not a pgAdmin SQL file. The supplied baseline is a self-contained copy of the existing Phase 2 SQL; it does not require Firestore or the old `tre_oo` snapshot schema.
+`run_all.psql` uses psql include commands and is not a pgAdmin SQL file. The baseline is self-contained and does not require Firestore or the old `tre_oo` snapshot schema.
+
+The sequence above uses the supplied vectors. In a full regeneration, `generate_data.py` first creates the text and audit files after the Phase 2 baseline, then `embed.py` runs **after step 10 and before step 11**. It reads `raw_documents.jsonl`, encodes each title and body, and writes a fresh `04_load_vectors.sql`; step 11 then loads those new vectors. The bonus pipeline below performs this sequence automatically. `evaluate.py` and `validate.py` evaluate and check the data; they do not regenerate embeddings.
 
 Run `06_oo_jsonb_examples.sql`, `07_vector_search_examples.sql`, `C1_filtered.sql` and `D1_combined.sql` to inspect outputs. The JSON update example rolls back. A repeated full setup fails rather than resetting an existing schema.
 
@@ -100,10 +115,12 @@ For the controlled top-ten comparison, exact search disables index/bitmap scans,
 
 All source records are fictional. The source is this project's `generate_data.py`, which reuses the synthetic Phase 2 keys and generates deterministic topic text from feature facts. No Kaggle dataset, scraped listing, real personal record or Calgary assessment file is used. There is no third-party dataset licence to cite, and no separate public redistribution licence is granted for this project-authored corpus. The model is distributed under Apache-2.0: [model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
 
-OpenAI Codex assisted with design, SQL, Python, sentence templates, relevance rules, tests, diagrams and documentation, and executed the recorded local runs. Dataset generation itself calls no generative API. Team members should review the work and disclose assistance according to course policy. The contribution table is explicitly a **proposed four-person allocation**, because no completed member assignments had been reported at preparation time.
+OpenAI Codex assisted with design, SQL, Python, sentence templates, relevance rules, tests, diagrams and documentation, and executed the recorded local runs. Dataset generation itself calls no generative API. Team members should review the work and disclose assistance according to course policy. The final combined Word report records the team members and their task-specific contributions.
 
 ## Submission
 
-Submit the five-page technical report, the separate two-page design plan, and the GitHub repository link through Brightspace. The reproducible Python pipeline is the bonus script. The existing team repository is [SethG1262/Advanced_DataBase](https://github.com/SethG1262/Advanced_DataBase). This local package is prepared for `advanceddb_project/Phase3_OO_JSONB_Vector/`; repository publication and Brightspace submission are separate actions. Confirm actual individual contributions before hand-in.
+Submit the [final combined technical report and design plan](Technical_Report/Phase%203%20Technical%20Report%20and%20Design%20Plan.docx) through Brightspace together with the [Phase 3 GitHub link](https://github.com/SethG1262/Advanced_DataBase/tree/main/Phase3_Implementation). The course permits the design plan to be part of the technical report. The document also contains the contribution table. The reproducible `Embeddings/run_pipeline.py` script provides the optional bonus workflow.
+
+The dated records in `Query_Results` describe the execution and reviews performed when those records were created. Repository publication does not itself submit the assignment to Brightspace.
 
 Technical references: [PostgreSQL JSONB](https://www.postgresql.org/docs/18/datatype-json.html), [PostgreSQL full text search](https://www.postgresql.org/docs/18/textsearch.html), [pgvector](https://github.com/pgvector/pgvector), [model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
